@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+      * {
+    box-sizing: inherit;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+  }
+      
+.box{
+    /* background-color: black; */
+    width: 100%;
+    height: 100vh;
+}
+.bn632-hover {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  /* position: relative; */
+  /* top: -99em; */
+  /* left: 80em; */
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  /* moz-transition: all .4s ease-in-out; */
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  /* moz-transition: all .4s ease-in-out; */
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn19 {
+  background-image: linear-gradient(
+    to right,
+    #f5ce62,
+    #e43603,
+    #fa7199,
+    #e85a19
+  );
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+.form-control{
+  height: 40px;
+  /* position: relative;
+  top: 30px; */
+}
+.bn3637 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  /* position: relative; */
+  top: 2em;
+  width: 500px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  background: #e85a19;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+
+.bn36 {
+  border-color: #fff;
+  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+.bn36:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+.frame{
+  width: 100%;
+  height: 40%;
+  /* background-color: #db3667; */
+  /* position: relative;
+  top: 40px; */
+}
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+.animate__animated{
+  position: relative;
+  top: -160px;
+  left: 36%;
+  width: 700px;
+}
+.spn{
+  position: relative;
+  top: -140px;
+  left: 45%;
+  width: 700px;
+  display: flex;
+}
+.glow-on-hover {
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    /* background: #111; */
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.fa-solid{
+  font-size: 25px;
+}
+.btn-5 {
+  width: 100px;
+  height: 40px;
+  border: 0 solid;
+  box-shadow: inset 0 0 20px white;
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  background-color: white;
+  position: relative;
+  top: 20px;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+
+.btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}
+.form-control{
+  position: relative;
+  top: 20px;
+}
+
+.contrmy{
+          width: 94.2em;
+          height: 100px;
+          position: relative;
+          left: 0px;
+          top: -999px;
+        }  
+        .phn{
+          position: relative;
+          top:-200px ;
+        }
+        .fw-normal{
+          position: relative;
+          left: 900px;
+          top: -290px;
+        }
+        .parent {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+width: 750px;
+border: 5px solid black;
+position: relative;
+left: 570px;
+top: -100px;
+height: 300px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; 
+   color: #e85a19;
+   left: 250px;
+   position: relative;
+   width: 300px;
+}
+.div2 { grid-area: 2 / 1 / 3 / 2; 
+position: relative;
+top: 9px;
+left: 250px;
+width: 500px;
+}
+.div3 { grid-area: 2 / 1 / 5 / 2; }
+.div4 { grid-area: 5 / 1 / 6 / 2; 
+
+position: relative;
+top: -18px;
+left: 250px;
+width: 300px;
+}
+.but1{
+  border: 0px solid white;
+  background-color: white;
+  color: blue;
+}
+.wrapper{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+.bnt{
+    width:200px;
+    height:200px;
+    background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
+    border-style: none;
+    color:#fff;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-family: 'Lato';
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 7px 7px 7px 7px rgba(0,0,0,.2);
+    top: 150px;
+    left: -70px;
+}
+.bnt span{
+    position: absolute;
+    display: block;
+}
+.bnt span:nth-child(1){
+    height: 3px;
+    width:200px;
+    top:0px;
+    left:-200px;
+    background: linear-gradient(to right, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1{
+    0%{
+        left:-200px
+    }
+    100%{
+        left:200px;
+    }
+}
+.bnt span:nth-child(2){
+    height: 70px;
+    width: 3px;
+    top:-70px;
+    right:0px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #f6e58d);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes span2{
+    0%{
+        top:-70px;
+    }
+    100%{
+        top:70px;
+    }
+}
+.bnt span:nth-child(3){
+    height:3px;
+    width:200px;
+    right:-200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0,0,0,0), #f6e58d);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes span3{
+    0%{
+        right:-200px;
+    }
+    100%{
+        right: 200px;
+    }
+}
+
+.bnt span:nth-child(4){
+    height:70px;
+    width:3px;
+    bottom:-70px;
+    left:0px;
+    background: linear-gradient(to top, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes span4{
+  0%{
+        left:-200px
+    }
+    100%{
+        left:200px;
+    }
+}
+
+.bnt:hover{
+    transition: all .5s;
+    transform: rotate(-3deg) scale(1.1);
+    box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
+.bnt:hover span{
+    animation-play-state: paused;
+}
+.parent2 {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+width: 750px;
+border: 5px solid black;
+position: relative;
+left: 570px;
+top: -40px;
+height: 300px;
+}
+
+.div12 { grid-area: 1 / 1 / 2 / 2; 
+   color: #e85a19;
+   left: 250px;
+   position: relative;
+   width: 300px;
+}
+.div22 { grid-area: 2 / 1 / 3 / 2; 
+position: relative;
+top: 9px;
+left: 250px;
+width: 500px;
+}
+.div32 { grid-area: 2 / 1 / 5 / 2; }
+.div42 { grid-area: 5 / 1 / 6 / 2; 
+
+position: relative;
+top: -18px;
+left: 250px;
+width: 300px;
+}
+.but12{
+  border: 0px solid white;
+  background-color: white;
+  color: blue;
+}
+.wrapper2{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+.bnt2{
+    width:200px;
+    height:200px;
+    background: linear-gradient(to left top, #010101 50%, #423e40 50%);
+    border-style: none;
+    color:#fff;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-family: 'Lato';
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 7px 7px 7px 7px rgba(0,0,0,.2);
+    top: 540px;
+    left: -70px;
+}
+.bnt2 span{
+    position: absolute;
+    display: block;
+}
+.bnt2 span:nth-child(1){
+    height: 3px;
+    width:200px;
+    top:0px;
+    left:-200px;
+    background: linear-gradient(to right, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1{
+    0%{
+        left:-200px
+    }
+    100%{
+        left:200px;
+    }
+}
+.bnt2 span:nth-child(2){
+    height: 70px;
+    width: 3px;
+    top:-70px;
+    right:0px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #f6e58d);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes span2{
+    0%{
+        top:-70px;
+    }
+    100%{
+        top:100px;
+    }
+}
+.bnt2 span:nth-child(3){
+    height:3px;
+    width:200px;
+    right:-200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0,0,0,0), #f6e58d);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes span3{
+    0%{
+        right:-200px;
+    }
+    100%{
+        right: 200px;
+    }
+}
+
+.bnt2 span:nth-child(4){
+    height:70px;
+    width:3px;
+    bottom:-70px;
+    left:0px;
+    background: linear-gradient(to top, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes span4{
+    0%{
+        bottom: -230px;
+    }
+    100%{
+        bottom:200px;
+    }
+}
+
+.bnt2:hover{
+    transition: all .5s;
+    transform: rotate(-3deg) scale(1.1);
+    box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
+.bnt2:hover span{
+    animation-play-state: paused;
+}
+.parent3 {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+width: 750px;
+border: 5px solid black;
+position: relative;
+left: 570px;
+top: 0px;
+height: 300px;
+}
+
+.div13 { grid-area: 1 / 1 / 2 / 2; 
+   color: #e85a19;
+   left: 250px;
+   position: relative;
+   width: 490px;
+}
+.div23 { grid-area: 2 / 1 / 3 / 2; 
+position: relative;
+top: 9px;
+left: 250px;
+width: 500px;
+}
+.div33 { grid-area: 2 / 1 / 5 / 2; }
+.div43 { grid-area: 5 / 1 / 6 / 2; 
+
+position: relative;
+top: -18px;
+left: 250px;
+width: 300px;
+}
+.but13{
+  border: 0px solid white;
+  background-color: white;
+  color: blue;
+}
+.car{
+  position: relative;
+  top: -240px;
+    left: 640px;
+    width: 100px;
+    box-shadow: 7px 7px 7px 7px rgba(0,0,0,.2);
+    transform: translate(-19%, -19%);
+    width: fit-content;
+}
+.car:hover{
+    transition: all .5s;
+    transform: rotate(-3deg) scale(1.1);
+    box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
+.car:hover span{
+    animation-play-state: paused;
+}
+.discount{
+  position: relative;
+  top: -80em;
+  left: 80px;
+  width: 600px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#" style="color: white;">EVENTS</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+                    <span class="navbar-toggler-icon" style="color: white;"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll" style="color: white;">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                      <li class="nav-item">
+
+                        <a class="nav-link" href="#" style="color: white;">ABOUT COLLRGEFEST</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/div.html/kk.html" style="color: white;">SPONSORS</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                          Link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="#" style="color: white;">excliusive</a></li>
+                          <li><a class="dropdown-item" href="#" style="color: white;">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#" style="color: white;">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="color: white;">Link</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                      <a href="https://twitter.com/Dave_Conner" class="btn btn-5">search</a>
+                      <a href="/"><button class="bn632-hover bn19">SUBMIT</button></a>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+
+              
+              </div>
+                          <div class="frame"></div>
+
+                          <h1 class="animate__animated animate__bounce">The CollegeFest Blog</h1>
+                          <div class="spn">
+                            <i class="fa-solid fa-house"></i>
+                            <button class="glow-on-hover" type="button">HOME</button>
+                            &nbsp;
+                            &nbsp;
+                            <b>/</b>
+                            &nbsp;
+                            <h5 class="blog"> blog</h4>
+                            
+                            </div>
+                          
+                            <div class="parent">
+                              <div class="div1"> <h2>
+                                15% Off Slate Milk</h2></div>
+                              <div class="div2">After a successful Kickstarter campaign, an appearance on ABC’s <br> Shark Tank,         and hundreds of iterations of testing, Slate launched in <br> late 2019 with three delicious chocolate milk flavors. Today, Slate <br> has expanded into new flavors and additional product lines, all of <br>  which contain 20g protein, have 0g added sugar, are lactose free, <br> and 100% plastic neutral.” </div>
+                              <div class="div3"> </div>
+                              <div class="div4"><button class="but1"> <b>  Coupon Code: COLLEGEFEST15 </b></button> </div>
+                              </div>
+                              <div class="wrapper">
+                                <button class="bnt">
+                                  SALTE
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                </button>
+                              </div>
+
+                              <div class="parent2">
+                                <div class="div12"> <h2>40% Off the Next 5 Orders</h2></div>
+                                <div class="div22">The NBA is offering students a 40% discount on League Pass to<br> stream live games and studio shows. This promotion is available to<br> all students attending accredited universities and colleges in the<br>U.S. and in select international markets. To be verified, students <br>  need to input their country, university / college name, first name <br> to redeem for 12 months of discounted League Pass access </div>
+                                <div class="div32"> </div>
+                                <div class="div42"><button class="but12"> <b>  Coupon Code: COLLEGEFEST15 </b></button> </div>
+                                </div>
+                                <div class="wrapper2">
+                                  <button class="bnt2">
+                                    UBER <br>EATS
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </button>
+                                </div>
+                                <div class="parent3">
+                                  <div class="div13"> <h2>Exclusive Student Offer of 40% Off NBA League Pass</h2></div>
+                                  <div class="div23">Offer valid for 40% off (up to $20) your next 5 orders at select<br> restaurants before 10/10/2023 at 12:00am ET. Order min of $15<br> (before taxes/fees) required. Taxes/fees still apply. Must apply <br>promo code in app before completing the order. Cannot be <br>  combined. US only. Boston only. Until supplies last. Offer & terms <br> and 100% plastic neutral.” </div>
+                                  <div class="div33"> </div>
+                                  <div class="div43"><button class="but13"> <b>Click Here to Redeem </b></button> </div>
+                                  </div>
+                                  <div class="car" > <img width="150px" height="200px" src="/car.jpg" alt=""></div>
+                                <div class="discount">
+                                  <img width="450px" height="900px" src="/Screenshot 2023-10-18 122515.png" alt="">
+                                </div>
+                                
+
+
+                                   <div class="contrmy">
+
+                                    <footer class="text-white text-center text-lg-start bg-dark">
+                                      <!-- Grid container -->
+                                      <div class="container p-4">
+                                        <!--Grid row-->
+                                        <div class="row mt-4">
+                                          <!--Grid column-->
+                                          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                                            <h5 class="text-uppercase mb-4">About college</h5>
+                                  
+                                            <p>
+                                              CollegeFest presents an unmatched consumer offering for college students by unique and engaging experiences from locally and nationally recognized brands, to form the biggest
+                                            </p>
+                                  
+                                            <p>
+                                              You can also contact us for information on reaching students across the country.
+                                            </p>
+                                  
+                                            <div class="mt-4">
+                                              <!-- Facebook -->
+                                              <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
+                                              <!-- Dribbble -->
+                                              <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>
+                                              <!-- Twitter -->
+                                              <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
+                                              <!-- Google + -->
+                                              <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>
+                                              <!-- Linkedin -->
+                                            </div>
+                                          </div>
+                                          <!--Grid column-->
+                                  
+                                          <!--Grid column-->
+                                          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                                            <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+                                  
+                                            <div class="form-outline form-white mb-4">
+                                              <!-- <input type="text" id="formControlLg" class="form-control form-control-lg" /> -->
+                                              <label class="form-label" for="formControlLg">contact</label>
+                                            </div>
+                                  
+                                            <ul class="fa-ul" style="margin-left: 1.65em;">
+                                              <li class="mb-3">
+                                                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Johri enclave c-40</span>
+                                              </li>
+                                              <li class="mb-3">
+                                                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">sharma.shubham19263@gmail.com</span>
+                                              </li>
+                                              <li class="mb-3">
+                                                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 9354224280</span>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                          <!--Grid column-->
+                                  
+                                          <!--Grid column-->
+                                          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                                            <h5 class="text-uppercase mb-4">Opening hours</h5>
+                                  
+                                            <table class="table text-center text-white">
+                                              <tbody class="fw-normal">
+                                                <tr>
+                                                  <td>Mon - Thu:</td>
+                                                  <td>8am - 9pm</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Fri - Sat:</td>
+                                                  <td>8am - 1am</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Sunday:</td>
+                                                  <td>9am - 10pm</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                          <!--Grid column-->
+                                        </div>
+                                        <!--Grid row-->
+                                      </div>
+                                      <!-- Grid container -->
+                                  
+                                      <!-- Copyright -->
+                                      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                                        © 2023 college fest:
+                                        <a class="text-white" href="https://mdbootstrap.com/">SHUBHAM SHARMA</a>
+                                      </div>
+                                      <!-- Copyright -->
+                                    </footer>
+                                  
+                                  </div>
+
+
+</body>
+</html>

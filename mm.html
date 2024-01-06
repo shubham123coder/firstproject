@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>COUNT 1 TO 100</h1>
+  <div id="call"></div>
+  <div id="call1"></div>
+  <div id="call2"></div>
+
+
+
+
+
+  <script>
+
+    var got = setInterval(updated);
+    var got1 = setInterval(updated);
+    var got2 = setInterval(updated);
+    let x = 0;
+    let y = 0;
+    let z = 0;
+    function updated(){
+      var count = document.getElementById("call");
+      count.innerHTML = ++x;
+      if(x===0){
+        clearInterval(got1);
+      }
+      var count1 = document.getElementById("call1");
+      count1.innerHTML = ++y;
+      if(y===0){
+        clearInterval(got2);
+      }
+      var count2 = document.getElementById("call2");
+      count2.innerHTML = ++z;
+      if(z===0){
+        clearInterval(got1);
+      }
+    }
+    
+  </script>
+</body>
+</html>

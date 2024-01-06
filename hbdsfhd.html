@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- <img src="/animals1 (1).png" alt="">
+    <br>
+    <button onclick="changeImage('OIP (1)')"> image 1</button>
+    <button onclick="changeImage('OIP (2)')">image 2</button>
+    <button onclick="changeImage('OIP (3)')">image 3</button>
+    <button onclick="changeImage('OIP (4)')">image 4 </button> -->
+    <img id="myImage" src="/OIP (1).jpeg" onclick="changeImage()">
+    <img id="myImage" src="/OIP (2).jpeg" onclick="changeImage()">
+    <img id="myImage" src="/OIP (3).jpeg" onclick="changeImage()">
+    <img id="myImage" src="/OIP (4).jpeg" onclick="changeImage()">
+    <script>
+        // function changeImage(fileName) {
+        //   let img = document.querySelector("#bannerImage");
+        //   img.setAttribute("src",fileName);
+        // }
+        function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match('photo1')) {
+    image.src = 'img/photo2.jpg';
+  } else {
+    image.src = 'img/photo1.jpg';
+  }
+}
+    </script>
+</body>
+</html>

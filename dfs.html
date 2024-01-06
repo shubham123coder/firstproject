@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .hor{
+            height: 100em;
+            width: 100%;
+            position: relative;
+            top: 390px;
+            background-color: blue;
+            border-bottom: 2px solid red;
+            /* z-index: -1; */
+        }
+        .container{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            box-sizing: 0 10px 20px red;
+            border-radius: 20px;
+            display: flex;
+            z-index: 1;
+        }
+        .job1{
+            height: 400px;
+            width: 400px;
+            border-radius: 20px;
+        }
+        
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+            cursor: pointer;
+            border-radius: 20px;
+            
+        }
+        .content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            text-align: center;
+            font-size: 50px;
+        }
+        .container:hover .overlay{
+            opacity: 0.8;
+            background-color: rgba(255,0, 0, 0.4);
+            /* background-color: red; */
+        }
+
+        .containerr{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-sizing: 0 10px 20px red;
+            border-radius: 20px;
+            display: flex;
+        }
+        .job2{
+            height: 400px;
+            width: 400px;
+            border-radius: 20px;
+        }
+        
+        .overlayy{
+            position: absolute;
+            top: 0;
+            left: 0 ;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+            cursor: pointer;
+            border-radius: 20px;
+            
+        }
+        .contentt{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            text-align: center;
+            font-size: 50px;
+        }
+        .containerr:hover .overlayy{
+            opacity: 0.8;
+            background-color: rgba(255, 0, 0, 0.4);
+            /* background-color: rgba(red, green, blue, alpha);/ */
+            /* background-color: red; */
+        }
+
+
+        .containerr3{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+            box-sizing: 0 10px 20px red;
+            border-radius: 20px;
+            display: flex;
+        }
+        .job3{
+            height: 400px;
+            width: 400px;
+            border-radius: 20px;
+        }
+        
+        .overlayy3{
+            position: absolute;
+            top: 0;
+            left: 0 ;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+            cursor: pointer;
+            border-radius: 20px;
+            
+        }
+        .contentt3{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            text-align: center;
+            font-size: 50px;
+        }
+        .containerr3:hover .overlayy3{
+            opacity: 0.8;
+            background-color: rgba(255, 0, 0, 0.4);
+            /* background-color: rgba(red, green, blue, alpha);/ */
+            /* background-color: red; */
+        }
+    </style>
+</head>
+<body>
+    <div class="hor">
+    <div class="container">
+        <img class="job1" src="/gallery00.jpg " alt="">
+       
+        <div class="overlay">
+            <div class="content">
+                <i class="fa-solid fa-magnifying-glass fa-rotate-90" style="color: #ffffff;"></i>
+                <!-- <h4>dsvj</h4> -->
+            </div>
+        </div>
+        
+    </div>
+
+                <div class="containerr">
+                    <img class="job2" src="/gallery02.jpg " alt="">
+                
+                    <div class="overlayy">
+                        <div class="contentt">
+                            <i class="fa-solid fa-magnifying-glass fa-rotate-90" style="color: #ffffff;"></i>
+                            <!-- <h4>dsvj</h4> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerr3">
+                    <img class="job3" src="/gallery03.jpg " alt="">
+                
+                    <div class="overlayy3">
+                        <div class="contentt3">
+                            <i class="fa-solid fa-magnifying-glass fa-rotate-90" style="color: #ffffff;"></i>
+                        
+                        </div>
+                    </div>
+        
+                </div>
+</body>
+</html>
